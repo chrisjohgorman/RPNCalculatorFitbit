@@ -1,4 +1,12 @@
 {
+  "name": "Calculator",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "^6.2.0-pre.1",
+    "@fitbit/sdk-cli": "^1.8.0-pre.11"
+  },
   "fitbit": {
     "appUUID": "3bb0d7f7-44cd-4837-a983-c7f2d4c931a3",
     "appType": "app",
@@ -7,8 +15,8 @@
     "wipeColor": "#ff5722",
     "requestedPermissions": [],
     "buildTargets": [
-      "higgs",
-      "meson"
+      "rhea",
+      "hera"
     ],
     "i18n": {
       "en": {
@@ -45,5 +53,9 @@
         "name": "計算器"
       }
     }
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
   }
 }

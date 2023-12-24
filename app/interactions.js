@@ -1,6 +1,6 @@
 import document from 'document'
 
-import { RPNKeypadLayoutIonic, RPNKeypadLayoutVersa } from 'keypadlayouts'
+import { RPNKeypadLayoutIonic, RPNKeypadLayoutVersa } from './keypadlayouts'
 
 export default class Interactions {
   constructor(deviceType) {
@@ -20,10 +20,12 @@ export default class Interactions {
     this._mouseUpIgnoreDelay = 75;
 
     // lots and lots of pixel values oh no
-    this._screenW = isIonic ? 348 : 300;
-    this._screenH = isIonic ? 250 : 300;
-    this._buttonW = isIonic ? 64 : 70;
-    this._buttonH = isIonic ? 57 : 55;
+    // FIXME - replaced Versa 300x300 size with Versa 4 / Sense 2
+    // 336x336
+    this._screenW = isIonic ? 348 : 336;
+    this._screenH = isIonic ? 250 : 336;
+    this._buttonW = isIonic ? 64 : 74;
+    this._buttonH = isIonic ? 57 : 58;
     this._edgeMarginX = 4;
     this._edgeMarginY = 5;
     this._buttonMarginX = isIonic ? 5 : 4;
