@@ -10,7 +10,7 @@ const maxDigits  = (device == 'Ionic') ? 6 : 7;
 
 // FIXME should use screen size to determine what watch we're wearing
 let interactions = new Interactions('Versa');
-let calc = new RPNCalculatorModel(7);
+let calc = new RPNCalculatorModel(6);
 
 // document elements
 const numberDisplayEl = document.getElementById("numberDisplay");
